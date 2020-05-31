@@ -47,10 +47,10 @@ void Student:: copy_student(const Student& other){
    AvgGrade=other.AvgGrade;
    numberCD=other.numberCD;
    numberPD=other.numberPD;
-   currentcourse=new Discipline[numberCD+1];
-   previouscourses=new Discipline[numberPD+1];
+   currentcourse=new Discipline[numberCD];
+   previouscourses=new Discipline[numberPD];
    for(int i=0;i<numberCD;i++) currentcourse[i]=other.currentcourse[i];
-   for(int i=0;i<numberCD;i++) previouscourses[i]=other.previouscourses[i];
+   for(int i=0;i<numberPD;i++) previouscourses[i]=other.previouscourses[i];
 
 }
 
@@ -88,10 +88,10 @@ name=new char[strlen(name_)+1];
    AvgGrade=AvgGrade_;
    numberCD=numberCD_;
    numberPD=numberPD_;
-   currentcourse=new Discipline[numberCD+1];
-   previouscourses=new Discipline[numberPD+1];
+   currentcourse=new Discipline[numberCD];
+   previouscourses=new Discipline[numberPD];
    for(int i=0;i<numberCD;i++) currentcourse[i]=currentcourse_[i];
-   for(int i=0;i<numberCD;i++) previouscourses[i]=previouscourses_[i];
+   for(int i=0;i<numberPD;i++) previouscourses[i]=previouscourses_[i];
 
 
 
